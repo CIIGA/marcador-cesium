@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360&deg; Image</title>
+    <meta name="description" content="360&deg; Image - A-Frame">
+    <!-- Cambia el script local por el enlace al CDN de A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.2/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" >
+      <a-assets>
+            
+        <img id="thumbJapan" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/japan.png">
+        
+    </a-assets>
+    <a-link href="index.php" position="-2.5 0.25 -12" image="#thumbJapan"></a-link>
+
+      <a-sky src="puydesancy.jpg" rotation="0 -130 0"></a-sky>
+
+      <a-text font="kelsonsans" value="Puy de Sancy, France" width="6" position="-2.5 0.25 -1.5"
+              rotation="0 15 0"></a-text>
+    </a-scene>
+  </body>
+</html>
